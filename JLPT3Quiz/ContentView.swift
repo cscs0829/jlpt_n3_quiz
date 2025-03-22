@@ -1,25 +1,33 @@
-//
-//  ContentView.swift
-//  JLPT3Quiz
-//
-//  Created by 박창선 on 3/22/25.
-//
-
 import SwiftUI
+
+enum QuizAlert: Identifiable {
+    case quizResult(String)
+    case addedToIncorrect
+    case alreadyInIncorrect // 이미 틀린 단어장에 있는 경우를 위한 새로운 케이스
+    
+    var id: Int {
+        switch self {
+        case .quizResult: return 0
+        case .addedToIncorrect: return 1
+        case .alreadyInIncorrect: return 2
+        }
+    }
+}
 
 struct ContentView: View {
     @State private var quizItems: [QuizItem] = loadQuizData().shuffled()
-    @State private var currentQuestionIndex = 0
+    @State private var currentQuestionIndex: Int = UserDefaults.standard.integer(forKey: "currentQuestionIndex")
     @State private var score = 0
-    @State private var showAlert = false
-    @State private var alertMessage = ""
-    @State private var incorrectAnswers: [Int] = []
+    @State private var incorrectAnswers: [Int] = UserDefaults.standard.array(forKey: "incorrectAnswers") as? [Int] ?? []
     @State private var showRetry = false
     @State private var currentChoices: [String] = []
-    @State private var incorrectQuizItems: [QuizItem] = [] // 틀린 문제 저장 배열
-
+    @State private var incorrectQuizItems: [QuizItem] = []
+    @State private var isShowingIncorrectQuiz = false
+    @State private var quizAlert: QuizAlert?
+    
     var currentQuestion: QuizItem {
-        return quizItems[currentQuestionIndex]
+        let index = min(currentQuestionIndex, quizItems.count - 1)
+        return quizItems[index]
     }
 
     var body: some View {
@@ -27,6 +35,8 @@ struct ContentView: View {
             Text("문제 \(currentQuestionIndex + 1) / \(quizItems.count)")
                 .font(.headline)
                 .padding()
+
+            Spacer()
 
             VStack {
                 Text(currentQuestion.hiragana)
@@ -36,20 +46,6 @@ struct ContentView: View {
                     .font(.largeTitle)
             }
             .padding()
-
-            // 틀린 단어장에 넣기 버튼 추가
-            if incorrectAnswers.contains(currentQuestionIndex) {
-                Button(action: {
-                    addIncorrectItem()
-                }) {
-                    Text("틀린 단어장에 넣기")
-                        .padding()
-                        .background(Color.orange)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .padding(.horizontal)
-            }
 
             ForEach(currentChoices, id: \.self) { choice in
                 Button(action: {
@@ -63,6 +59,50 @@ struct ContentView: View {
                         .cornerRadius(10)
                 }
                 .padding(.horizontal)
+            }
+
+            Spacer()
+
+            if incorrectAnswers.contains(currentQuestionIndex) {
+                Button(action: {
+                    addIncorrectItem()
+                }) {
+                    Text("틀린 단어장에 넣기")
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal)
+            }
+
+            Button(action: {
+                isShowingIncorrectQuiz = true
+            }) {
+                Text("틀린 단어장에 가기")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.yellow)
+                    .foregroundColor(.black)
+                    .cornerRadius(10)
+            }
+            .padding(.horizontal)
+            
+            .alert(item: $quizAlert) { alert in
+                switch alert {
+                case .addedToIncorrect:
+                    return Alert(title: Text("알림"), message: Text("틀린 단어장에 추가되었습니다!"), dismissButton: .default(Text("확인")))
+                case .quizResult(let message):
+                    return Alert(title: Text("결과"), message: Text(message), primaryButton: .default(Text("다음 문제")) {
+                        nextQuestion()
+                    }, secondaryButton: .cancel(Text("취소")))
+                case .alreadyInIncorrect: // 새로운 케이스 추가
+                    return Alert(title: Text("알림"), message: Text("이미 틀린 단어장에 있는 단어입니다!"), dismissButton: .default(Text("확인")))
+                }
+            }
+
+            .sheet(isPresented: $isShowingIncorrectQuiz) {
+                IncorrectQuizView(incorrectQuizItems: incorrectQuizItems)
             }
 
             if showRetry {
@@ -84,23 +124,19 @@ struct ContentView: View {
         }
         .onChange(of: currentQuestionIndex) { _ in
             currentChoices = currentQuestion.choices.shuffled()
-        }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("결과"), message: Text(alertMessage), primaryButton: .default(Text("다음 문제")) {
-                nextQuestion()
-            }, secondaryButton: .cancel(Text("취소")))
+            UserDefaults.standard.set(currentQuestionIndex, forKey: "currentQuestionIndex")
+            UserDefaults.standard.set(incorrectAnswers, forKey: "incorrectAnswers")
         }
     }
 
     func checkAnswer(selectedChoice: String) {
         if selectedChoice == currentQuestion.meaning {
             score += 1
-            alertMessage = "정답입니다!"
+            quizAlert = .quizResult("정답입니다!")
         } else {
             incorrectAnswers.append(currentQuestionIndex)
-            alertMessage = "오답입니다."
+            quizAlert = .quizResult("오답입니다.")
         }
-        showAlert = true
     }
 
     func nextQuestion() {
@@ -108,8 +144,7 @@ struct ContentView: View {
             currentQuestionIndex += 1
         } else {
             showRetry = !incorrectAnswers.isEmpty
-            alertMessage = "퀴즈가 종료되었습니다. 당신의 점수는 \(score)점 입니다."
-            showAlert = true
+            quizAlert = .quizResult("퀴즈가 종료되었습니다. 당신의 점수는 \(score)점 입니다.")
         }
     }
 
@@ -121,8 +156,11 @@ struct ContentView: View {
     }
 
     func addIncorrectItem() {
-        incorrectQuizItems.append(currentQuestion)
-        // 여기에 틀린 단어장 저장 로직 추가 (예: UserDefaults, 파일 저장 등)
-        print("틀린 단어장에 추가: \(currentQuestion.kanji)") // 확인용 출력
+        if incorrectQuizItems.contains(where: { $0.kanji == currentQuestion.kanji }) {
+            quizAlert = .alreadyInIncorrect // 이미 있는 경우 알림 표시
+        } else {
+            incorrectQuizItems.append(currentQuestion)
+            quizAlert = .addedToIncorrect
+        }
     }
 }
