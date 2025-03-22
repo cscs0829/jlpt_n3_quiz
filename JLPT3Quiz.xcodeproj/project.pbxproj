@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8BEF4EA52D8EA7E10080B562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BEF4E8C2D8EA7E00080B562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BEF4E932D8EA7E00080B562;
+			remoteInfo = JLPT3Quiz;
+		};
+		8BEF4EAF2D8EA7E10080B562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BEF4E8C2D8EA7E00080B562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BEF4E932D8EA7E00080B562;
+			remoteInfo = JLPT3Quiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BEF4E942D8EA7E00080B562 /* JLPT3Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPT3Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEF4EA42D8EA7E10080B562 /* JLPT3QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLPT3QuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEF4EAE2D8EA7E10080B562 /* JLPT3QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLPT3QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8BEF4E962D8EA7E00080B562 /* JLPT3Quiz */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JLPT3Quiz;
+			sourceTree = "<group>";
+		};
+		8BEF4EA72D8EA7E10080B562 /* JLPT3QuizTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JLPT3QuizTests;
+			sourceTree = "<group>";
+		};
+		8BEF4EB12D8EA7E10080B562 /* JLPT3QuizUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JLPT3QuizUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BEF4E912D8EA7E00080B562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEF4EA12D8EA7E10080B562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEF4EAB2D8EA7E10080B562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BEF4E8B2D8EA7E00080B562 = {
+			isa = PBXGroup;
+			children = (
+				8BEF4E962D8EA7E00080B562 /* JLPT3Quiz */,
+				8BEF4EA72D8EA7E10080B562 /* JLPT3QuizTests */,
+				8BEF4EB12D8EA7E10080B562 /* JLPT3QuizUITests */,
+				8BEF4E952D8EA7E00080B562 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BEF4E952D8EA7E00080B562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BEF4E942D8EA7E00080B562 /* JLPT3Quiz.app */,
+				8BEF4EA42D8EA7E10080B562 /* JLPT3QuizTests.xctest */,
+				8BEF4EAE2D8EA7E10080B562 /* JLPT3QuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BEF4E932D8EA7E00080B562 /* JLPT3Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEF4EB82D8EA7E10080B562 /* Build configuration list for PBXNativeTarget "JLPT3Quiz" */;
+			buildPhases = (
+				8BEF4E902D8EA7E00080B562 /* Sources */,
+				8BEF4E912D8EA7E00080B562 /* Frameworks */,
+				8BEF4E922D8EA7E00080B562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8BEF4E962D8EA7E00080B562 /* JLPT3Quiz */,
+			);
+			name = JLPT3Quiz;
+			packageProductDependencies = (
+			);
+			productName = JLPT3Quiz;
+			productReference = 8BEF4E942D8EA7E00080B562 /* JLPT3Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BEF4EA32D8EA7E10080B562 /* JLPT3QuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEF4EBB2D8EA7E10080B562 /* Build configuration list for PBXNativeTarget "JLPT3QuizTests" */;
+			buildPhases = (
+				8BEF4EA02D8EA7E10080B562 /* Sources */,
+				8BEF4EA12D8EA7E10080B562 /* Frameworks */,
+				8BEF4EA22D8EA7E10080B562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BEF4EA62D8EA7E10080B562 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8BEF4EA72D8EA7E10080B562 /* JLPT3QuizTests */,
+			);
+			name = JLPT3QuizTests;
+			packageProductDependencies = (
+			);
+			productName = JLPT3QuizTests;
+			productReference = 8BEF4EA42D8EA7E10080B562 /* JLPT3QuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BEF4EAD2D8EA7E10080B562 /* JLPT3QuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BEF4EBE2D8EA7E10080B562 /* Build configuration list for PBXNativeTarget "JLPT3QuizUITests" */;
+			buildPhases = (
+				8BEF4EAA2D8EA7E10080B562 /* Sources */,
+				8BEF4EAB2D8EA7E10080B562 /* Frameworks */,
+				8BEF4EAC2D8EA7E10080B562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BEF4EB02D8EA7E10080B562 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8BEF4EB12D8EA7E10080B562 /* JLPT3QuizUITests */,
+			);
+			name = JLPT3QuizUITests;
+			packageProductDependencies = (
+			);
+			productName = JLPT3QuizUITests;
+			productReference = 8BEF4EAE2D8EA7E10080B562 /* JLPT3QuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BEF4E8C2D8EA7E00080B562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					8BEF4E932D8EA7E00080B562 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					8BEF4EA32D8EA7E10080B562 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8BEF4E932D8EA7E00080B562;
+					};
+					8BEF4EAD2D8EA7E10080B562 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8BEF4E932D8EA7E00080B562;
+					};
+				};
+			};
+			buildConfigurationList = 8BEF4E8F2D8EA7E00080B562 /* Build configuration list for PBXProject "JLPT3Quiz" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BEF4E8B2D8EA7E00080B562;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8BEF4E952D8EA7E00080B562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BEF4E932D8EA7E00080B562 /* JLPT3Quiz */,
+				8BEF4EA32D8EA7E10080B562 /* JLPT3QuizTests */,
+				8BEF4EAD2D8EA7E10080B562 /* JLPT3QuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BEF4E922D8EA7E00080B562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEF4EA22D8EA7E10080B562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEF4EAC2D8EA7E10080B562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BEF4E902D8EA7E00080B562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEF4EA02D8EA7E10080B562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BEF4EAA2D8EA7E10080B562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BEF4EA62D8EA7E10080B562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BEF4E932D8EA7E00080B562 /* JLPT3Quiz */;
+			targetProxy = 8BEF4EA52D8EA7E10080B562 /* PBXContainerItemProxy */;
+		};
+		8BEF4EB02D8EA7E10080B562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BEF4E932D8EA7E00080B562 /* JLPT3Quiz */;
+			targetProxy = 8BEF4EAF2D8EA7E10080B562 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8BEF4EB62D8EA7E10080B562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BEF4EB72D8EA7E10080B562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BEF4EB92D8EA7E10080B562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JLPT3Quiz/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changseon.com.JLPT3Quiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BEF4EBA2D8EA7E10080B562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JLPT3Quiz/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changseon.com.JLPT3Quiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BEF4EBC2D8EA7E10080B562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changseon.com.JLPT3QuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLPT3Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JLPT3Quiz";
+			};
+			name = Debug;
+		};
+		8BEF4EBD2D8EA7E10080B562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changseon.com.JLPT3QuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLPT3Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JLPT3Quiz";
+			};
+			name = Release;
+		};
+		8BEF4EBF2D8EA7E10080B562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changseon.com.JLPT3QuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JLPT3Quiz;
+			};
+			name = Debug;
+		};
+		8BEF4EC02D8EA7E10080B562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = changseon.com.JLPT3QuizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JLPT3Quiz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BEF4E8F2D8EA7E00080B562 /* Build configuration list for PBXProject "JLPT3Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEF4EB62D8EA7E10080B562 /* Debug */,
+				8BEF4EB72D8EA7E10080B562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEF4EB82D8EA7E10080B562 /* Build configuration list for PBXNativeTarget "JLPT3Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEF4EB92D8EA7E10080B562 /* Debug */,
+				8BEF4EBA2D8EA7E10080B562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEF4EBB2D8EA7E10080B562 /* Build configuration list for PBXNativeTarget "JLPT3QuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEF4EBC2D8EA7E10080B562 /* Debug */,
+				8BEF4EBD2D8EA7E10080B562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BEF4EBE2D8EA7E10080B562 /* Build configuration list for PBXNativeTarget "JLPT3QuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BEF4EBF2D8EA7E10080B562 /* Debug */,
+				8BEF4EC02D8EA7E10080B562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BEF4E8C2D8EA7E00080B562 /* Project object */;
+}
