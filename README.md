@@ -1,5 +1,3 @@
-Markdown
-
 # JLPT N3 단어 퀴즈 (JLPT3Quiz)
 
 ## 📚 프로젝트 개요
