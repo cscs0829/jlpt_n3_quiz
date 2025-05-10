@@ -1,17 +1,14 @@
-//
-//  JLPT3QuizApp.swift
-//  JLPT3Quiz
-//
-//  Created by 박창선 on 3/22/25.
-//
-
+// JLPT3QuizApp.swift
 import SwiftUI
 
 @main
 struct JLPT3QuizApp: App {
+    @StateObject private var persistentStore = PersistentIncorrectWordStore()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainMenuView()
+                .environmentObject(persistentStore) // 모든 하위 뷰에서 접근 가능하도록 주입
         }
     }
 }
